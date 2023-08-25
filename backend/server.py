@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
-
+from flask_cors import CORS
 from data import stations
 from models.traffic_predictor import TrafficPredictor
 import datetime
 
 application = Flask(__name__)
+cors = CORS(application)
+
 application.config['SECRET_KEY'] = 'werty57i39fj92udifkdb56fwed232z'
 model = TrafficPredictor()
 
