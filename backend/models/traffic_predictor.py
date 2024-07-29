@@ -16,7 +16,7 @@ class TrafficPredictor:
     def __init__(self, model_path=None, le_line_path=None,
                  le_station_path=None):
         if model_path is None:
-            model_path = os.path.join(DIR, "catboost_model_best_201.cbm")
+            model_path = os.path.join(DIR, "catboost_model_best.cbm")
         if le_line_path is None:
             le_line_path = os.path.join(DIR, "label_encoder_line.joblib")
         if le_station_path is None:
